@@ -17,17 +17,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
-        cache: 'pnpm'
 
-    - name: Install pnpm
-      run: |
-        npm install -g pnpm
-        export PATH=$(npm root -g)/.bin:$PATH
-        echo "Updated PATH: $PATH"
-
-
-    - name: Verify pnpm installation
-      run: pnpm --version
+    - name: Set up pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8 # 替换为你需要的 pnpm 版本
 
     - name: Install dependencies
       run: pnpm install
