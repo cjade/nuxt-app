@@ -7,12 +7,25 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "cf-deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
+    "@vicons/ionicons5": "^0.13.0",
+    "naive-ui": "^2.41.0",
     "nuxt": "^3.15.1",
+    "vfonts": "^0.0.3",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
+  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a",
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sass": "^1.83.1",
+    "sass-loader": "^16.0.4",
+    "tailwindcss": "^3.4.17",
+    "wrangler": "^3.101.0"
+  }
 }
