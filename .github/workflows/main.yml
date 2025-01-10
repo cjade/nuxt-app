@@ -22,7 +22,9 @@ jobs:
     - name: Install pnpm
       run: |
         npm install -g pnpm
-        echo "pnpm installed at $(which pnpm)"
+        export PATH=$(npm root -g)/.bin:$PATH
+        echo "Updated PATH: $PATH"
+
 
     - name: Verify pnpm installation
       run: pnpm --version
