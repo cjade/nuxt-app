@@ -8,7 +8,8 @@ compatibility_date = "2023-05-18"
 [observability]
 enabled = true
 
-[node_compat]
+
+[node_compat.external]
 enabled = true
 
 [build]
