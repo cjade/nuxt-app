@@ -7,3 +7,9 @@ compatibility_date = "2023-05-18"
 # Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
 [observability]
 enabled = true
+
+[node_compat]
+enabled = true
+
+[build]
+external = ["vue"]
