@@ -9,8 +9,8 @@ compatibility_date = "2023-05-18"
 enabled = true
 
 
-[node_compat.external]
-enabled = true
+# 启用 Node.js 兼容性
+node_compat = true
 
 [build]
 external = ["vue"]
